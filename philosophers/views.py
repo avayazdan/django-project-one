@@ -5,7 +5,7 @@ from Philosophers.serializers import PhilosopherSerializer
 
 # Create your views here.
 
-class PhilosopherListView(generics.ListCreateAPIView):
+class PhilosophersListView(generics.ListCreateAPIView):
     queryset = Philosopher.objects.all()
     serializer_class = PhilosopherSerializer
 
