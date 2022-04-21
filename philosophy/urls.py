@@ -1,6 +1,7 @@
 from django.urls import path
-from .views import PhilosophyListView
+from .views import ListView, DetailView
 
 urlpatterns = [
-    path('', PhilosophyListView.as_view()),
+    path('', ListView.as_view()),
+    path('<str:pk>/', DetailView.as_view())
 ]
