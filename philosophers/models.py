@@ -2,7 +2,7 @@ from django.db import models
 
 # Create your models here.
 
-class Philosophers(models.Model):  # inside the brackets is where its inheriting from
+class Philosopher(models.Model):  # inside the brackets is where its inheriting from
 
     name = models.CharField(max_length=50)
     birth_place = models.CharField(max_length=50)

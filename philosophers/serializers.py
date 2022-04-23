@@ -1,8 +1,7 @@
 from rest_framework import serializers
-from .models import Philosophers, Show
-
+from .models import Philosopher
 class PhilosopherSerializer(serializers.ModelSerializer):
 
     class Meta:
-        model = Philosophers
+        model = Philosopher
         fields = '__all__'

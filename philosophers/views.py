@@ -1,7 +1,7 @@
 from django.shortcuts import render
 from rest_framework import generics
-from Philosophers.models import Philosopher
-from Philosophers.serializers import PhilosopherSerializer
+from .models import Philosopher
+from .serializers import PhilosopherSerializer
 
 # Create your views here.
 
